@@ -1,0 +1,310 @@
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url(../fonts/ProximaNova/ProximaNova-Reg.otf);
+}
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url(../fonts/ProximaNova/ProximaNova-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: ProximaNova-Regular;
+}
+
+/**
+* Reset Css
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+* utils
+*/
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.gap-15px {
+    gap: 15px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.link {
+    color: #1194f7;
+}
+
+/*
+* Css styles
+*/
+.container {
+    margin: 0 75px;
+}
+
+p, a {
+    color: #373737;
+}
+
+.hero {
+    overflow: auto;
+    background-color: #23123a;
+}
+
+.navbar {
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.navbar-nav .navbar-link {
+    font-family: ProximaNova-Bold;
+    padding: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #aaa;
+}
+
+.navbar-nav .navbar-link:last-child {
+    border-right: 0px;
+}
+
+.navbar-nav .navbar-link a {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hero .hero-body {
+    background-image: url(../imgs/hero.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.hero-body .hero-title {
+    font-family: ProximaNova-Bold;
+    font-weight: bold;
+    color: #fff;
+    font-size: 120px;
+    padding-top: 65px;
+}
+
+.main-section {
+    background-color: #f1f6f9;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.main-section .title {
+    font-family: ProximaNova-Bold;
+    color: #373737;
+    font-size: 35px;
+}
+
+.main-section .card {
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 35px;
+}
+
+.main-section .card .card-title {
+    font-size: 20px;
+}
+
+.main-section .card .card-review span {
+    display: flex;
+    margin-right: 10px;
+}
+
+.main-section .card .card-review svg {
+    width: 20px;
+    height: 20px;
+    color: #59d8d1;
+}
+
+.main-section .card .card-body {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #aaa;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 35px;
+}
+
+.main-section .card .card-body .credit-card {
+    height: 130px;
+}
+
+.main-section .card .card-body .credit-card-badge {
+    text-align: center;
+}
+
+.main-section .card .card-body .credit-card-badge p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.main-section .card .card-body .credit-card-badge button {
+    text-align: center;
+    border: 0;
+    background-color: #59d8d1;
+    padding: 10px 25px;
+    font-family: ProximaNova-Bold;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main-section .card .card-body .apply-button {
+    width: 100%;
+    margin-top: 20px;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fa6e3d;
+    color: #fff;
+    font-size: 16px;
+    font-family: ProximaNova-Bold;
+    cursor: pointer;
+}
+
+.main-section .card .card-body ul {
+    font-size: 20px; 
+    list-style: disc; 
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.main-section .card .card-body ul li {
+    margin-bottom: 10px;
+}
+
+
+.main-section .card .card-body ul li:last-child {
+    margin-bottom: 10px;
+}
+
+.main-section .card .card-footer .link {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .main-section .card .card-body {
+        grid-template-columns: auto;
+    }
+
+    .main-section .card .card-body ul {
+        margin-top: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767.98px) { 
+    .main-section {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .card-review {
+        display: none;
+    }
+    .main-section .container {
+        margin: 0;
+    }
+
+    .main-section .title {
+        font-size: 30px;
+        padding: 0 35px;
+        line-height: 38px;
+    }
+
+    .main-section .card {
+        padding: 35px;
+    }
+
+    .main-section .card .card-body .credit-card-badge {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-section .card .card-body ul li {
+        margin-bottom: 20px;
+    }
+}
